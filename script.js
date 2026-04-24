@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
 
-  /* ── EMAILJS MODAL FORM ── */
+/* ── EMAILJS MODAL FORM ── */
   const modalSubmit = document.getElementById('modal-submit');
   if (modalSubmit) {
     modalSubmit.addEventListener('click', function(e) {
@@ -53,11 +53,10 @@ document.addEventListener('DOMContentLoaded', function () {
       const phone     = document.getElementById('modal-phone').value.trim();
       const email     = document.getElementById('modal-email').value.trim();
       const vehicle   = document.getElementById('modal-vehicle').value.trim();
-      const service   = document.getElementById('modal-service').value;
       const date      = document.getElementById('modal-date').value;
       const notes     = document.getElementById('modal-notes').value.trim();
 
-      if (!firstName || !lastName || !phone || !email || !service) {
+      if (!firstName || !lastName || !phone || !email) {
         alert('Please fill in all required fields.');
         return;
       }
@@ -66,13 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.textContent = 'Sending...';
       btn.disabled = true;
 
-      emailjs.send('service_u8pk8sp', 'template_0zsqjlm', {
+      emailjs.send('service_xu46dkf', 'template_3a6vy5k', {
         first_name: firstName,
         last_name:  lastName,
         phone:      phone,
         email:      email,
         vehicle:    vehicle,
-        service:    service,
         date:       date,
         notes:      notes,
       })
@@ -84,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('modal-phone').value     = '';
         document.getElementById('modal-email').value     = '';
         document.getElementById('modal-vehicle').value   = '';
-        document.getElementById('modal-service').value   = '';
         document.getElementById('modal-date').value      = '';
         document.getElementById('modal-notes').value     = '';
         setTimeout(() => { closeModal(); btn.textContent = 'Confirm Appointment →'; btn.disabled = false; btn.style.background = ''; }, 3000);
@@ -108,9 +105,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const lastName  = document.getElementById('hero-lastname').value.trim();
       const phone     = document.getElementById('hero-phone').value.trim();
       const email     = document.getElementById('hero-email').value.trim();
-      const service   = document.getElementById('hero-service').value;
 
-      if (!firstName || !lastName || !phone || !email || !service) {
+      if (!firstName || !lastName || !phone || !email) {
         alert('Please fill in all required fields.');
         return;
       }
@@ -124,7 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
         last_name:  lastName,
         phone:      phone,
         email:      email,
-        service:    service,
       })
       .then(function() {
         btn.textContent = '✓ Request Sent!';
@@ -134,7 +129,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('hero-lastname').value  = '';
         document.getElementById('hero-phone').value     = '';
         document.getElementById('hero-email').value     = '';
-        document.getElementById('hero-service').value   = '';
       })
       .catch(function(error) {
         console.error('EmailJS error:', error);
