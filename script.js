@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.textContent = 'Sending...';
       btn.disabled = true;
 
-      emailjs.send('service_xu46dkf', 'template_3a6vy5k', {
+      emailjs.send('service_u8pk8sp', 'template_0zsqjlm', {
         first_name: firstName,
         last_name:  lastName,
         phone:      phone,
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.textContent = 'Sending...';
       btn.disabled = true;
 
-      emailjs.send('service_xu46dkf', 'template_3a6vy5k', {
+      emailjs.send('service_u8pk8sp', 'template_0zsqjlm', {
         first_name: firstName,
         last_name:  lastName,
         phone:      phone,
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.textContent = 'Sending...';
       btn.disabled = true;
 
-      emailjs.send('service_xu46dkf', 'template_3a6vy5k', {
+      emailjs.send('service_u8pk8sp', 'template_0zsqjlm', {
         first_name: firstName,
         last_name:  lastName,
         phone:      phone,
