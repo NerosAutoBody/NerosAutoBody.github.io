@@ -62,6 +62,11 @@ nav {
 .nav-logo {
   display: flex; align-items: center; gap: 12px; text-decoration: none;
 }
+.nav-logo-img {
+  height: 44px;   /* fits comfortably in the 70px nav */
+  width: auto;
+  display: block;
+}
 .nav-logo-icon {
   width: 42px; height: 42px;
   background: linear-gradient(135deg, var(--silver), var(--silver-dark));
