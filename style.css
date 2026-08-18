@@ -63,7 +63,7 @@ nav {
   display: flex; align-items: center; gap: 12px; text-decoration: none;
 }
 .nav-logo-img {
-  height: 44px;   /* fits comfortably in the 70px nav */
+  height: 60px;   /* fits comfortably in the 70px nav */
   width: auto;
   display: block;
 }
