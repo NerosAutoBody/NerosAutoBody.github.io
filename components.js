@@ -45,10 +45,7 @@
   var NAVBAR = '\
 <nav>\
   <a href="index.html" class="nav-logo">\
-    <div>\
-      <div class="nav-logo-text">Nero\'s Auto Body</div>\
-      <div class="nav-logo-sub">Est. 2004</div>\
-    </div>\
+    <img src="NEROS_edited.png" alt="Nero\'s Auto Body" class="nav-logo-img">\
   </a>\
   <ul class="nav-links">\
     <li><a href="index.html"' + isActive('index.html') + '>Home</a></li>\
